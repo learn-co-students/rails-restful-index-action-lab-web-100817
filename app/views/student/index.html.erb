@@ -1,0 +1,7 @@
+<h1>HEY HERE IS A LIST OF STUDENTS</h1>
+
+<ol>
+  <% @students.each do |student| %>
+  <li><%= "#{student.first_name} #{student.last_name}" %></li>
+  <% end %>
+</ol>
