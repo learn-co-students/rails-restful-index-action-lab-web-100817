@@ -1,0 +1,10 @@
+<h1>New Student</h1>
+
+
+<%= form_for @student, url: {action: "new"}, html: {class: "nifty_form"} do |f| %>
+  <%= label_tag(:first_name, "First Name:") %>
+  <%= f.text_field :first_name %>
+  <%= label_tag(:last_name, "Last Name:") %>
+  <%= f.text_field :last_name %>
+  <%= f.submit "New" %>
+<% end %>
